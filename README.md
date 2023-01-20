@@ -4,7 +4,7 @@ Aplikasi ini adalah sebuah API sederhana untuk manajemen tugas menggunakan Expre
 
 ### Daftar Tugas
 
-Untuk mengambil daftar semua tugas, gunakan permintaan GET ke alamat `/tasks`.
+Untuk mengambil daftar semua tugas, gunakan permintaan GET ke alamat **`/tasks`**.
 
 Contoh:
 
@@ -12,7 +12,8 @@ GET http://localhost:3000/tasks
 
 Response:
 
-`[
+```
+[
 {
 "_id": "5f9b4f4f4b4c1a4d8f4b4c1a",
 "title": "Tugas 1",
@@ -25,35 +26,40 @@ Response:
 "description": "Deskripsi tugas 2",
 "completed": true
 }
-]`
+]
+```
 
 ### Tambah Tugas
 
 Untuk menambah tugas baru, gunakan permintaan POST ke alamat /tasks dengan badan permintaan yang berisi bidang-bidang berikut:
 
-`title`: Judul tugas (wajib)
-`description`: Deskripsi tugas (opsional)
-`completed`: Boolean yang menunjukkan apakah tugas selesai (default: false)
+**`title`**: Judul tugas (wajib)
+**`description`**: Deskripsi tugas (opsional)
+**`completed`**: Boolean yang menunjukkan apakah tugas selesai (default: false)
 
 Contoh:
 
 POST http://localhost:3000/tasks
 
-`Body:
-{
+Body:
+
+```{
 "title": "Tugas 3",
 "description": "Deskripsi tugas 3",
 "completed": false
-}`
+}
+```
 
 Response:
 
-`{
-"\_id": "5f9b4f4f4b4c1a4d8f4b4c1c",
+```
+{
+"_id": "5f9b4f4f4b4c1a4d8f4b4c1c",
 "title": "Tugas 3",
 "description": "Deskripsi tugas 3",
 "completed": false
-}`
+}
+```
 
 ### Lihat Tugas
 
@@ -65,12 +71,14 @@ GET http://localhost:3000/tasks/5f9b4f4f4b4c1a4d8f4b4c1a
 
 Response:
 
-`{
-"\_id": "5f9b4f4f4b4c1a4d8f4b4c1a",
+```
+{
+"_id": "5f9b4f4f4b4c1a4d8f4b4c1a",
 "title": "Tugas 1",
 "description": "Deskripsi tugas 1",
 "completed": false
-}`
+}
+```
 
 ### Perbarui Tugas
 
@@ -82,22 +90,26 @@ PATCH http://localhost:3000/tasks/5f9b4f4f4b4c1a4d8f4b4c1a
 
 Body:
 
-`{
+```
+{
 "completed": true
-}`
+}
+```
 
 Response:
 
-`{
-"\_id": "5f9b4f4f4b4c1a4d8f4b4c1a",
+```
+{
+"_id": "5f9b4f4f4b4c1a4d8f4b4c1a",
 "title": "Tugas 1",
 "description": "Deskripsi tugas 1",
 "completed": true
-}`
+}
+```
 
 ### Hapus Tugas
 
-Untuk menghapus tugas dengan ID tertentu, gunakan permintaan DELETE ke alamat `/tasks/:id`.
+Untuk menghapus tugas dengan ID tertentu, gunakan permintaan DELETE ke alamat **`/tasks/:id`**.
 
 Contoh:
 
@@ -110,17 +122,17 @@ Response:
 #### Cara Menjalankan Aplikasi
 
 1. Clone repositori ini ke komputer Anda
-   git clone https://github.com/franskbarek/my-task-manager-api.git
+   git clone **`https://github.com/franskbarek/my-tasks-manager.git`**
 
 2. Masuk ke dalam direktori aplikasi
    cd my-task-manager-api
 
 3. Install dependensi
-   npm install
+   npm install atau yarn jika menggunakan yarn
 4. Jalankan aplikasi
-   npm start atau yarn jika menggunakan yarn
+   npm start atau yarn start jika menggunakan yarn
 
-   Aplikasi akan berjalan pada `http://localhost:3000` dan siap digunakan. Pastikan untuk menjalankan MongoDB pada komputer Anda sebelum menjalankan aplikasi ini.
+   Aplikasi akan berjalan pada **`http://localhost:3000`** dan siap digunakan. Pastikan untuk menjalankan MongoDB pada komputer Anda sebelum menjalankan aplikasi ini.
 
    #### Catatan
 
