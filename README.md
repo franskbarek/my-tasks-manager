@@ -102,7 +102,7 @@ Response:
 
 ### Perbarui Tugas
 
-Untuk memperbarui tugas dengan id tertentu, gunakan permintaan PATCH ke alamat **`/tasks/:id`** dengan request body yang berisi bidang yang ingin di perbarui.
+Untuk memperbarui tugas dengan id tertentu, gunakan permintaan PATCH ke alamat **`/tasks/:id`** dengan request berdasarkan request params yang berisi bidang yang ingin di perbarui.
 
 Contoh:
 
