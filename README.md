@@ -1,6 +1,6 @@
 ## Aplikasi Manajemen Tugas
 
-Aplikasi ini adalah sebuah API sederhana untuk manajemen tugas menggunakan Express.js dan MongoDB. API ini mendukung titik akhir berikut:
+Aplikasi ini adalah sebuah API sederhana untuk manajemen tugas menggunakan Express.js dan MongoDB. API ini mendukung endpoint berikut:
 
 ### Mendapatkan Seluruh Tugas
 
@@ -31,11 +31,9 @@ Response:
 
 ### Tambah Tugas
 
-Untuk menambah tugas baru, gunakan permintaan POST ke alamat /tasks dengan request body yang berisi bidang-bidang berikut:
+Untuk menambah tugas baru, gunakan permintaan POST ke alamat **`/tasks`** dengan request body yang berisi bidang-bidang berikut:
 
-**`title`**: Judul tugas (wajib)
-**`description`**: Deskripsi tugas (opsional)
-**`completed`**: Boolean yang menunjukkan apakah tugas selesai (default: false)
+> -**title**: Judul tugas (wajib) -**description**: Deskripsi tugas (opsional) -**completed**: Boolean yang menunjukkan apakah tugas selesai (default: false)
 
 Contoh:
 
@@ -43,7 +41,8 @@ POST http://localhost:3000/tasks
 
 Body:
 
-```{
+```
+{
 "title": "Tugas 3",
 "description": "Deskripsi tugas 3",
 "completed": false
@@ -63,7 +62,7 @@ Response:
 
 ### Mendapatkan Tugas dengan ID tertentu
 
-Untuk mengambil tugas dengan ID tertentu, gunakan permintaan GET ke alamat /tasks/:id.
+Untuk mengambil tugas dengan ID tertentu, gunakan permintaan GET ke alamat **`/tasks/:id`**.
 
 Contoh:
 
@@ -82,7 +81,7 @@ Response:
 
 ### Perbarui Tugas
 
-Untuk memperbarui tugas dengan ID tertentu, gunakan permintaan PATCH ke alamat /tasks/:id dengan request body yang berisi bidang yang ingin di perbarui.
+Untuk memperbarui tugas dengan ID tertentu, gunakan permintaan PATCH ke alamat **`/tasks/:id`** dengan request body yang berisi bidang yang ingin di perbarui.
 
 Contoh:
 
