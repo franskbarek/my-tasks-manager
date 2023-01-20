@@ -23,7 +23,7 @@ _-Jangan lupa untuk melakukan testing dan debugging pada aplikasi Anda untuk mem
 
 ### Mendapatkan Seluruh Tugas
 
-Untuk mengambil mendapatkan semua tugas, gunakan permintaan GET ke alamat **`/tasks`**.
+Untuk mendapatkan semua tugas, gunakan permintaan GET ke alamat **`/tasks`**.
 
 Contoh:
 
@@ -83,7 +83,7 @@ Response:
 
 ### Mendapatkan Tugas Tertentu
 
-Untuk mengambil tugas dengan ID tertentu, gunakan permintaan GET ke alamat **`/tasks/:id`**.
+Untuk mengambil tugas dengan id tertentu, gunakan permintaan GET ke alamat **`/tasks/:id`**.
 
 Contoh:
 
@@ -102,7 +102,7 @@ Response:
 
 ### Perbarui Tugas
 
-Untuk memperbarui tugas dengan ID tertentu, gunakan permintaan PATCH ke alamat **`/tasks/:id`** dengan request body yang berisi bidang yang ingin di perbarui.
+Untuk memperbarui tugas dengan id tertentu, gunakan permintaan PATCH ke alamat **`/tasks/:id`** dengan request body yang berisi bidang yang ingin di perbarui.
 
 Contoh:
 
@@ -129,7 +129,7 @@ Response:
 
 ### Hapus Tugas
 
-Untuk menghapus tugas dengan ID tertentu, gunakan permintaan DELETE ke alamat **`/tasks/:id`**.
+Untuk menghapus tugas dengan id tertentu, gunakan permintaan DELETE ke alamat **`/tasks/:id`**.
 
 Contoh:
 
