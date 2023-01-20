@@ -25,4 +25,14 @@ app.use((req, res, next) => {
 
 app.use("/tasks", tasksRoute);
 
+//handle ketika route tasks tidak memenuhi harapan
+app.use(function (err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send("Something went wrong!");
+});
+
+app.use(function (req, res, next) {
+  res.status(404).send("Sorry page can't find!");
+});
+
 app.listen(3000, () => console.log("Task manager API listening at http://localhost:3000"));
