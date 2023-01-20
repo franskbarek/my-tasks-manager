@@ -7,7 +7,7 @@ router.post("/", async (req, res) => {
     await task.save();
     res.status(201).json(task);
   } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
   }
 });
 
@@ -45,7 +45,7 @@ router.delete("/:id", async (req, res) => {
     await Task.findByIdAndDelete(req.params.id);
     res.status(200).json("Task has been deleted...");
   } catch (err) {
-    handleError(err, res);
+    res.status(500).json(err);
   }
 });
 
