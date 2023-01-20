@@ -16,7 +16,8 @@ Aplikasi ini adalah sebuah API sederhana untuk manajemen tugas menggunakan Expre
 > Aplikasi akan berjalan pada **`http://localhost:3000`** dan siap digunakan. Pastikan untuk menjalankan MongoDB pada komputer Anda sebelum menjalankan aplikasi ini.
 
 **_Catatan_**
-_-Pastikan mongoDB sudah terinstall dan running ada 2 option bisa menggunakannya pada lokal mesin anda atau bisa juga cloud_
+
+_-Pastikan mongoDB sudah terinstall dan running ada 2 opsi bisa menggunakannya pada lokal mesin anda atau bisa juga pada cloud_
 _-Sesuaikan konfigurasi database pada file server.js dengan setting pada mongodb anda_
 _-Anda dapat menggunakan aplikasi seperti Postman atau Insomnia untuk mengirim permintaan ke API._
 _-Jangan lupa untuk melakukan testing dan debugging pada aplikasi Anda untuk memastikan bahwa semuanya berjalan dengan baik._
