@@ -17,7 +17,7 @@ Aplikasi ini adalah sebuah API sederhana untuk manajemen tugas menggunakan Expre
 
 **_Catatan_**
 _-Pastikan mongoDB sudah terinstall dan running ada 2 opsi bisa menggunakannya pada lokal mesin anda atau bisa juga pada cloud_,
-_-Sesuaikan konfigurasi database pada file server.js dengan setting pada mongodb anda,_
+_-Sesuaikan konfigurasi database pada file index.js dengan setting pada mongodb anda,_
 _-Anda dapat menggunakan aplikasi seperti Postman atau Insomnia untuk mengirim permintaan ke API._
 _-Jangan lupa untuk melakukan testing dan debugging pada aplikasi Anda untuk memastikan bahwa semuanya berjalan dengan baik._ _-Jika menemukan bug atau masalah, silakan buat issue pada repositori ini atau hubungi pengembang. Semoga aplikasi ini dapat membantu Anda dalam manajemen tugas Anda. Selamat mencoba!_
 
