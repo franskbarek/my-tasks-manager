@@ -32,7 +32,7 @@ app.use(function (err, req, res, next) {
 });
 
 app.use(function (req, res, next) {
-  res.status(404).send("Sorry page can't find!");
+  res.status(404).send("Sorry page cant find!");
 });
 
 app.listen(3000, () => console.log("Task manager API listening at http://localhost:3000"));
