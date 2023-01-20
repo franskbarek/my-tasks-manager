@@ -23,6 +23,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/task", tasksRoute);
+app.use("/tasks", tasksRoute);
 
 app.listen(3000, () => console.log("Task manager API listening at http://localhost:3000"));
